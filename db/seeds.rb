@@ -7,3 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+user = User.create(username: 'valeria', password: '1234')
+clinic = Clinic.create(user_id: 1, name: 'Yourvet', address: '2934 5th Ave, NY', services: 'bloodwork, cpr')
+clinic3 = Clinic.create(user_id: 1, name: 'EmergencyVet', address: '1134 4th Ave, NY', services: 'cpr')
+
+user2 = User.create(username: 'brisa', password: '1234')
+clinic2 = Clinic.create(user_id: 2, name: '24hclinic', address: '2345 Ditmars Blvd, NY', services: 'bloodwork, cpr, surgery')

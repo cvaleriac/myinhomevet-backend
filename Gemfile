@@ -10,6 +10,7 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 
+gem 'bcrypt'
 gem 'rack-cors'
 gem 'active_model_serializers'
 # Use SCSS for stylesheets
