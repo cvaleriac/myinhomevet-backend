@@ -1,10 +1,8 @@
 class Api::V1::ClinicsController < ApplicationController
 
-    before_action :current_user
-    before_action :authenticate_user!
 
     def index 
-        @clinics = current_user.clinics
+        @clinics = user.clinics
         render json: @clinics
     end
 

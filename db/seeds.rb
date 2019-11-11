@@ -7,9 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-user = User.create(username: 'valeria', password: '1234')
+user = User.create(name: 'valeria', pet: 'dog')
 clinic = Clinic.create(user_id: 1, name: 'Yourvet', address: '2934 5th Ave, NY', services: 'bloodwork, cpr')
 clinic3 = Clinic.create(user_id: 1, name: 'EmergencyVet', address: '1134 4th Ave, NY', services: 'cpr')
+pet = Pet.create(user_id: 1, name: 'Billy', species: 'dog', age: 4)
 
-user2 = User.create(username: 'brisa', password: '1234')
+user2 = User.create(name: 'Ermal', pet: 'cat')
 clinic2 = Clinic.create(user_id: 2, name: '24hclinic', address: '2345 Ditmars Blvd, NY', services: 'bloodwork, cpr, surgery')
+pet2 =Pet.create(user_id: 2, name: 'Brisa', species: 'cat', age: 12)

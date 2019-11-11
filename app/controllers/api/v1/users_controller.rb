@@ -21,14 +21,14 @@ class Api::V1::UsersController < ApplicationController
 
     def destroy 
         @user = User.find(params[:id])
-        @account.destroy
+        @user.destroy
     end
 
 
     private
 
     def user_params
-        params.require(:user).permit(:username, :password)
+        params.require(:user).permit(:name, :pet)
     end
 
 
