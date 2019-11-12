@@ -2,12 +2,10 @@
 
 one:
   name: MyString
-  species: MyString
-  age: MyString
-  integer: MyString
+  age: 1
+  user_id: 1
 
 two:
   name: MyString
-  species: MyString
-  age: MyString
-  integer: MyString
+  age: 1
+  user_id: 1

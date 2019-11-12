@@ -1,12 +1,12 @@
 class Api::V1::PetsController < ApplicationController
 
     def index 
-        @pets = Pet.all
+        @pets = user.pets
         render json: @pets
     end
 
     def create
-        @pet = Pet.new(pet_params)
+        @pet = @user.pets.build(pet_params)
         if @pet.save 
             render json: @pet
         else
