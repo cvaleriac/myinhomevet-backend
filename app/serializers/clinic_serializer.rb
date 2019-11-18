@@ -1,5 +1,5 @@
 class ClinicSerializer < ActiveModel::Serializer
-  attributes :id, :name, :address, :services, :user_id
+  attributes :id, :name, :address, :services
 
   belongs_to :user
 

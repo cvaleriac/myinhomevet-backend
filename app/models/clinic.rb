@@ -3,6 +3,6 @@ class Clinic < ApplicationRecord
 
   validates :name, presence: true
   validates :address, presence: true
-  validates :name, :uniqueness => { case_sensitive: false }
   validates :address, uniqueness: true
+  validates :services, presence: true
 end
