@@ -11,7 +11,7 @@ class Api::V1::ClinicsController < ApplicationController
     def create
         @clinic = @user.clinics.build(clinic_params)
         if @clinic.save 
-            render json: @clinic
+            render json: @user
         else
             render json:{error:'Error creating clinic'}
         end
