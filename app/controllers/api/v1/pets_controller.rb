@@ -22,9 +22,13 @@ class Api::V1::PetsController < ApplicationController
     end
 
     def destroy 
-        @pet = Pet.find(params[:id])
+
+        @pet = Pet.find(params["id"])
+        @user = User.find(@pet.user_id)
         @pet.destroy
+        render json: @user
     end
+
 
 
     private

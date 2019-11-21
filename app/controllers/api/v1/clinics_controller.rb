@@ -23,8 +23,10 @@ class Api::V1::ClinicsController < ApplicationController
     end
 
     def destroy 
-        @clinic = Clinic.find(params[:id])
+        @clinic = Clinic.find(params["id"])
+        @user = User.find(@clinic.user_id)
         @clinic.destroy
+        render json: @user
     end
 
 
