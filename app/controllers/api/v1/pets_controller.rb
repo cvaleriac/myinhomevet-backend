@@ -28,8 +28,7 @@ class Api::V1::PetsController < ApplicationController
         @pet.destroy
         render json: @user
     end
-
-
+    
 
     private
 
