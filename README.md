@@ -1,24 +1,4 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MyInHomeVet-App is an app dedicated to pet lovers, who are in need of veterinary care at home, while travelling or on daily bases.
+You can find the frontend repo here> https://github.com/cvaleriac/myinhomevet-frontend
